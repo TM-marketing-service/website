@@ -152,6 +152,15 @@
             color: #000000;
 
         }
+        .about{
+            text-align: left;
+        }
+        @media (max-width:1000px) {
+            .about{
+                text-align: center;
+            }
+            
+        }
     </style>
 
 
@@ -165,7 +174,7 @@
 
         <nav class="navbar navbar-expand-sm bg-transparent navbar-dark  ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img id="logo" style="position:relative;width:60%;height:60%;top:2%"
+                <a class="navbar-brand" ><img id="logo" style="position:relative;width:60%;height:60%;top:2%"
                         alt="logo" src="https://drive.google.com/thumbnail?id=1zwfoO7jftR74XwKbdmyYXKtyWCDpFHx3"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapsibleNavbar">
@@ -239,10 +248,13 @@
                         <option class="op" value="Software solution">Software solution</option>
                         <option class="op" value="Other">Andere</option>
                     </select><br><br>
-                    <button type="submit" class="btn btn-primary" style="background-color:green;border-radius:25px ; ">
-                        Absenden <i class="fas fa-paper-plane btn-fu"></i></button>
-                    <button type="reset" class="btn btn-primary" style="background-color:#ff0000;border-radius:25px ;">
-                        Reset <i class="fas fa-undo btn-fu"></i></button>
+                    <p class="fs-5" style="color:rgb(255, 255, 255)">Durch das klicken auf der Schaltfläche "Buchung
+                        stornieren", akzeptieren Sie unsere <a class="fs-5" href="dataprivacy.html"
+                            target="_blank">DSGVO und AGB.</a></p><br>
+                    <button type="submit" class="btn btn-primary" style="background-color:green;border-radius:25px ; color:white ">
+                        Absenden <i class="fas fa-paper-plane btn-fu" style="color:white"></i></button>
+                    <button type="reset" class="btn btn-primary" style="background-color:#ff0000;border-radius:25px ;color:white">
+                        Reset <i class="fas fa-undo btn-fu" style="color:white"></i></button>
 
                 </form>
             </div>
@@ -250,20 +262,27 @@
         <br><br>
 
         <h1 id="Über_uns" class="fw-bold" style="text-align:center">Über uns</h1><br>
-        <div class="brow"><br>
-            Willkommen bei <b>TM-Marketing Service</b>, wir sind die Experten für digitales Marketing und
-            Webentwicklung.
-            Spezialisiert sind wir auf Google Ads, Meta Ads, Analytische Dashboards, Webentwicklung und die
-            Automatisierung von Geschäftsprozessen. Wir generieren gezielten Traffic und hochwertige Leads mit
-            effektiven Meta Ads und bieten wertvolle Erkenntnisse durch Analytische Dashboards. Unsere Dienstleistungen
-            umfassen die Entwicklung beeindruckender Websites mit benutzerfreundlichen Online-Buchungssystemen zur
-            Optimierung Ihrer Prozesse. <br><br>
-            Bei <b>TM-Marketing Service</b> profitieren Sie von herausragenden Ergebnissen und
-            individueller Unterstützung. Starten Sie noch heute Ihre Reise zum Online-Erfolg, indem Sie uns
-            kontaktieren.
-        </div><br><br>
+        <div class=" row brow">
+            <div class="col-sm-6 about" ><br><br>
+                
+                <img src="about.png" class="img-fluid" style="position:relative;left:0;padding-bottom: 0; width:65%">
+            </div>
+            <div class="col-sm-5 " style="position:relative;left:2%">
+                Willkommen bei <b>TM-Marketing Service</b>, wir sind die Experten für digitales Marketing und
+                Webentwicklung.
+                Spezialisiert sind wir auf Google Ads, Meta Ads, Analytische Dashboards, Webentwicklung und die
+                Automatisierung von Geschäftsprozessen. Wir generieren gezielten Traffic und hochwertige Leads mit
+                effektiven Meta Ads und bieten wertvolle Erkenntnisse durch Analytische Dashboards. Unsere
+                Dienstleistungen
+                umfassen die Entwicklung beeindruckender Websites mit benutzerfreundlichen Online-Buchungssystemen zur
+                Optimierung Ihrer Prozesse. <br>
+                Bei <b>TM-Marketing Service</b> profitieren Sie von herausragenden Ergebnissen und
+                individueller Unterstützung. Starten Sie noch heute Ihre Reise zum Online-Erfolg, indem Sie uns
+                kontaktieren.
+            </div>
+        </div><br><br><br><br><br><br><br>
         <!--Services carousel-->
-        <h1 id="Unsere_Dienstleistungen" class="fw-bold" style="text-align:center">Unsere Dienstleistungen</h1><br>
+        <h1 id="Unsere_Dienstleistungen" class="fw-bold" style="text-align:center;">Unsere Dienstleistungen</h1><br>
         <div id="demo" class="container carousel slide" data-bs-ride="carousel">
 
             <!-- Indicators/dots -->
@@ -407,7 +426,7 @@
                     <div class="row">
                         <!-- Grid column -->
                         <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                            <img src="https://drive.google.com/thumbnail?id=1zwfoO7jftR74XwKbdmyYXKtyWCDpFHx3">
+                            <img src="Trends in Marketing.png" width="70%">
 
                         </div>
                         <!-- Grid column -->
@@ -424,7 +443,7 @@
 
                         <!-- Grid column -->
                         <div id="kontaktieren_Sie_uns" class="col-md-5 col-lg-5 col-xl-5 mx-auto mt-3">
-                            <h3 class="text-uppercase mb-4 font-weight-bold">Contact</h3>
+                            <h3 class="text-uppercase mb-4 font-weight-bold">kontaktieren Sie uns</h3>
                             <a><i class="fas fa-home mr-3"></i> Josef-Poppelreuter-Straße 7, 51107 Köln, NRW,
                                 Deutschland.</a><br><br>
                             <a style="color:rgb(233, 194, 91)" href="mailto:kontakt@tm-marketingservice.de"><i
@@ -432,7 +451,7 @@
                             <a style="color:rgb(233, 194, 91)" href="tel:+4917684957795"><i
                                     class="fas fa-phone mr-3"></i> +49-176-849-57795</a><br><br>
                             <a type="button" class="btn btn-primary"
-                                style="border-radius: 25px;background-color: #40BF50;" href="https://wa.link/jcovol"
+                                style="border-radius: 25px;background-color: #40BF50;color:white" href="https://wa.link/jcovol"
                                 target="_blank">Chatten Sie uns an <i style="color:white"
                                     class="fab fa-whatsapp"></i></a><br><br>
                             <a type="button" class="btn btn-primary" style="border-radius: 25px;"
@@ -443,8 +462,8 @@
                         <!-- Grid column -->
 
                         <!-- Grid column -->
-                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                            <h3 class="text-uppercase mb-4 font-weight-bold">Follow us</h3>
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h3 class="text-uppercase mb-4 font-weight-bold">Folgen Sie uns</h3>
 
                             <!-- Facebook -->
                             <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998"
@@ -510,4 +529,5 @@
 
 
 </body>
+
 </html>
