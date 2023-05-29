@@ -152,14 +152,37 @@
             color: #000000;
 
         }
-        .about{
+
+        .about {
             text-align: left;
         }
+
         @media (max-width:1000px) {
-            .about{
+            .about {
                 text-align: center;
             }
-            
+
+        }
+
+        #datap {
+            color: rgb(247, 245, 180)
+        }
+
+        #datap:hover {
+            color: rgb(233, 194, 91)
+        }
+
+        .vertical-line {
+            display: inline-block;
+            width: 1px;
+            height: 36px;
+            /* Set the height of the line according to your requirement */
+            background-color: rgb(247, 245, 180);
+            /* Set the color of the line */
+            margin: 0 10px;
+            /* Set the margin according to your requirement */
+            vertical-align: middle;
+            /* To align the line with the text in the <a> tags */
         }
     </style>
 
@@ -174,8 +197,8 @@
 
         <nav class="navbar navbar-expand-sm bg-transparent navbar-dark  ">
             <div class="container-fluid">
-                <a class="navbar-brand" ><img id="logo" style="position:relative;width:60%;height:60%;top:2%"
-                        alt="logo" src="https://drive.google.com/thumbnail?id=1zwfoO7jftR74XwKbdmyYXKtyWCDpFHx3"></a>
+                <a class="navbar-brand"><img id="logo" style="position:relative;width:60%;height:60%;top:2%" alt="logo"
+                        src="https://drive.google.com/thumbnail?id=1zwfoO7jftR74XwKbdmyYXKtyWCDpFHx3"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
@@ -248,12 +271,13 @@
                         <option class="op" value="Software solution">Software solution</option>
                         <option class="op" value="Other">Andere</option>
                     </select><br><br>
-                    <p class="fs-5" >Durch das klicken auf der Schaltfläche "Buchung
-                        stornieren", akzeptieren Sie unsere <a class="fs-5" href="dataprivacy.html"
-                            target="_blank">DSGVO und AGB.</a></p><br>
-                    <button type="submit" class="btn btn-primary" style="background-color:green;border-radius:25px ; color:white ">
+                    <p class="fs-5">Durch das klicken auf der Schaltfläche "Absenden", akzeptieren Sie unsere <a
+                            class="fs-5" href="dataprivacy.html" target="_blank">DSGVO und AGB.</a></p><br>
+                    <button type="submit" class="btn btn-primary"
+                        style="background-color:green;border-radius:25px ; color:white ">
                         Absenden <i class="fas fa-paper-plane btn-fu" style="color:white"></i></button>
-                    <button type="reset" class="btn btn-primary" style="background-color:#ff0000;border-radius:25px ;color:white">
+                    <button type="reset" class="btn btn-primary"
+                        style="background-color:#ff0000;border-radius:25px ;color:white">
                         Reset <i class="fas fa-undo btn-fu" style="color:white"></i></button>
 
                 </form>
@@ -263,11 +287,11 @@
 
         <h1 id="Über_uns" class="fw-bold" style="text-align:center">Über uns</h1><br>
         <div class=" row brow">
-            <div class="col-sm-6 about" ><br><br>
-                
+            <div class="col-sm-6 about"><br><br>
+
                 <img src="about.png" class="img-fluid" style="position:relative;left:0;padding-bottom: 0; width:65%">
             </div>
-            <div class="col-sm-5 " style="position:relative;left:2%">
+            <div class="col-sm-6 " style="padding-left:13px; padding-right: 13px;" >
                 Willkommen bei <b>TM-Marketing Service</b>, wir sind die Experten für digitales Marketing und
                 Webentwicklung.
                 Spezialisiert sind wir auf Google Ads, Meta Ads, Analytische Dashboards, Webentwicklung und die
@@ -451,8 +475,8 @@
                             <a style="color:rgb(233, 194, 91)" href="tel:+4917684957795"><i
                                     class="fas fa-phone mr-3"></i> +49-176-849-57795</a><br><br>
                             <a type="button" class="btn btn-primary"
-                                style="border-radius: 25px;background-color: #40BF50;color:white" href="https://wa.link/jcovol"
-                                target="_blank">Chatten Sie uns an <i style="color:white"
+                                style="border-radius: 25px;background-color: #40BF50;color:white"
+                                href="https://wa.link/jcovol" target="_blank">Chatten Sie uns an <i style="color:white"
                                     class="fab fa-whatsapp"></i></a><br><br>
                             <a type="button" class="btn btn-primary" style="border-radius: 25px;"
                                 href="https://calendly.com/trendsinmarketing" target="_blank">Sprechen Sie mit unseren
@@ -491,6 +515,11 @@
 
             <!-- Copyright -->
             <br><br>
+            <div class="container d-flex justify-content-center ">
+                <a id="datap" type="button" href="/dataprivacy.html" target="_blank">Datenschutz</a>
+                <span class="vertical-line"></span>
+                <a id="datap" type="button" href="/impressum.html" target="_blank">Impressum</a>
+            </div><br>
             <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
                 © 2023 Copyright:
                 <a>TM-Marketing Service Gbr</a>
