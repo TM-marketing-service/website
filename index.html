@@ -192,6 +192,22 @@
             vertical-align: middle;
             /* To align the line with the text in the <a> tags */
         }
+        #scroll-to-top {
+            display: none;
+            /* Initially hidden */
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: rgb(248, 183, 5);
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            padding: 12px;
+            border-radius: 50%;
+        }
     </style>
 
 
@@ -203,6 +219,26 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NNRS5GX"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+    <button id="scroll-to-top" onclick="scrollToTop()"><i class="fas fa-arrow-up" style="color:black" aria-hidden="true"></i></button><br>
+
+    <script>
+        // Show the scroll-to-top button when scrolling down
+        window.addEventListener('scroll', scrollFunction);
+
+        function scrollFunction() {
+            var scrollButton = document.getElementById("scroll-to-top");
+            if (window.pageYOffset > 20) {
+                scrollButton.style.display = "block";
+            } else {
+                scrollButton.style.display = "none";
+            }
+        }
+
+        // Scroll to top when the button is clicked
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
     <div class="container-fullwidth m-0 p-0">
 
 
@@ -528,9 +564,9 @@
             <!-- Copyright -->
             <br><br>
             <div class="container d-flex justify-content-center ">
-                <a id="datap" type="button" href="/dataprivacy.html" target="_blank">Datenschutz</a>
+                <a id="datap" type="button" href="/dataprivacy.html" >Datenschutz</a>
                 <span class="vertical-line"></span>
-                <a id="datap" type="button" href="/impressum.html" target="_blank">Impressum</a>
+                <a id="datap" type="button" href="/impressum.html" >Impressum</a>
             </div><br>
             <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
                 © 2023 Copyright:
