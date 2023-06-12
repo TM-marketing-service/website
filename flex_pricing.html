@@ -213,23 +213,25 @@
             border-radius: 50%;
         }
 
-       .btn{
-        border-radius: 25px;
-        
-       }
-       small{
-        font-size: 14px;
-       }
-
-
-   
-        .card{
-            background-color: rgb(54, 49, 18);
-            color:white;
-            border-radius:25px ;
+        .btn {
+            border-radius: 25px;
 
         }
-        li{
+
+        small {
+            font-size: 14px;
+        }
+
+
+
+        .card {
+            background-color: rgb(54, 49, 18);
+            color: white;
+            border-radius: 25px;
+
+        }
+
+        li {
             font-size: 14px
         }
     </style>
@@ -245,21 +247,23 @@
     <!-- End Google Tag Manager (noscript) -->
     <br><br>
     <section class="text-center">
-        <h4 class="mb-4"><strong>Google Ads oder Meta Ads Preisgestaltung
-        </strong></h4>
-        <div class="btn-group mb-4" role="group" aria-label="Basic example" >
+        <h2 class="mb-3"><strong>Google Ads oder Meta Ads Preisgestaltung
+            </strong></h2>
+        <div class="btn-group mb-4" role="group" aria-label="Basic example">
             <button id="paybtn" type="button" class="btn btn-light active" onclick="pay()" style="border-color: black;">
                 Monatlich
             </button>
-            <button id="3monthsbtn" type="button" class="btn btn-dark" onclick="three()"style="border-color: black;">3 Monatsplan</button>
-            <button id="6monthsbtn" type="button" class="btn btn-dark " onclick="six()" style="border-color: black;">6 Monatsplan <strong><small>(ca.16% billiger als 3-Monatsplan)</small></strong></button>
+            <button id="3monthsbtn" type="button" class="btn btn-dark" onclick="three()" style="border-color: black;">3
+                Monatsplan</button>
+            <button id="6monthsbtn" type="button" class="btn btn-dark " onclick="six()" style="border-color: black;">6
+                Monatsplan <strong><small>(ca.16% billiger als 3-Monatsplan)</small></strong></button>
             <button id="1yearbtn" type="button" class="btn btn-dark" onclick="year()" style="border-color: black;">
                 1 Jahr plan <strong><small>(ca.24% billiger als 3-Monatsplan)</small></strong>
             </button>
-            
+
         </div>
         <script>
-            function three(){
+            function three() {
                 document.getElementById('3months').style.display = 'flex'
                 document.getElementById('1year').style.display = 'none'
                 document.getElementById('6months').style.display = 'none'
@@ -271,7 +275,7 @@
 
 
             }
-            function six(){
+            function six() {
                 document.getElementById('6months').style.display = 'flex'
                 document.getElementById('1year').style.display = 'none'
                 document.getElementById('3months').style.display = 'none'
@@ -283,7 +287,7 @@
 
 
             }
-            function year(){
+            function year() {
                 document.getElementById('1year').style.display = 'flex'
                 document.getElementById('6months').style.display = 'none'
                 document.getElementById('3months').style.display = 'none'
@@ -295,7 +299,7 @@
 
 
             }
-            function pay(){
+            function pay() {
                 document.getElementById('pay').style.display = 'flex'
                 document.getElementById('6months').style.display = 'none'
                 document.getElementById('3months').style.display = 'none'
@@ -310,14 +314,14 @@
         </script>
     </section>
     <p style="text-align: center;">Für die erstmalige Teilnahme werden 229 Euro an Beitrittsgebühren erhoben.</p>
-    
+
     <!--1 month plan start-->
-    <div id="pay" class="row" >
+    <div id="pay" class="row">
         <div class="col-md-3">
             <div class="card">
                 <div class="mx-2 card-body">
                     <h5 class="card-title my-2 ">Basic</h5>
-                    <p class="h2 fw-bold">€ 299<small class="fs-6" >/Monat </small></p>
+                    <p class="h2 fw-bold">€ 299<small class="fs-6">/Monat </small></p>
                     <h5 class="fw-bold">plus 5 % des monatlichen Budgets für Ihre Anzeigen.</h5>
                     <a href="#" class="btn btn-dark d-block mb-2 mt-3 text-capitalize">Subscribe</a>
                 </div>
@@ -327,23 +331,25 @@
                         <p class="my-3 fw-bold text-muted text-center">
                         </p>
                         <li class="mb-3">
-                            <i class="fas fa-check text-success me-3"></i><small>2 Kampagnen in Google Ads oder Meta pro Mont</small>
+                            <i class="fas fa-check text-success me-3"></i><small>2 Kampagnen in Google Ads oder Meta pro
+                                Mont</small>
                         </li>
                         <li class="mb-3">
-                            <i class="fas fa-check text-success me-3"></i><small> 2 mal Standartoptimierungen pro Monat</small>
+                            <i class="fas fa-check text-success me-3"></i><small> 2 mal Standartoptimierungen pro
+                                Monat</small>
                         </li>
                     </ol>
                 </div>
-            </div>
+            </div><br><br>
         </div>
         <div class="col-md-3">
             <div class="card border border-dark">
                 <div class="mx-2 card-body">
                     <h5 class="card-title my-2 ">Premium</h5>
                     <p class="text-muted">
-                        
+
                     </p>
-                    <p class="h2 fw-bold">€ 499<small class="fs-6" >/Monat </small></p>
+                    <p class="h2 fw-bold">€ 499<small class="fs-6">/Monat </small></p>
                     <h5 class="fw-bold">plus 5 % des monatlichen Budgets für Ihre Anzeigen.</h5>
                     <a href="#" class="btn btn-dark d-block mb-2 mt-3 text-capitalize">Subscribe</a>
                 </div>
@@ -353,33 +359,37 @@
                         <p class="my-3 fw-bold text-muted text-center">
                         </p>
                         <li class="mb-3">
-                            <i class="fas fa-check text-success me-3"></i><small>6 Kampagnen in Google Ads oder Meta</small>
+                            <i class="fas fa-check text-success me-3"></i><small>6 Kampagnen in Google Ads oder
+                                Meta</small>
                         </li>
                         <li class="mb-3">
-                            <i class="fas fa-check text-success me-3"></i><small>2 mal Strategie-Planung im Monat</small>
+                            <i class="fas fa-check text-success me-3"></i><small>2 mal Strategie-Planung im
+                                Monat</small>
                         </li>
                         <li class="mb-3">
-                            <i class="fas fa-check text-success me-3"></i><small> 2 mal Standart/Advancedoptimierung pro Woche</small>
+                            <i class="fas fa-check text-success me-3"></i><small> 2 mal Standart/Advancedoptimierung pro
+                                Woche</small>
                         </li>
                         <li class="mb-3">
-                            <i class="fas fa-check text-success me-3"></i><small> Reporting und Analytics-Dashboard</small>
+                            <i class="fas fa-check text-success me-3"></i><small> Reporting und
+                                Analytics-Dashboard</small>
                         </li>
-                       
+
                         <li class="mb-3">
                             <i class="fas fa-check text-success me-3"></i><small> Premium Support</small>
                         </li>
                     </ol>
                 </div>
-            </div>
+            </div><br><br>
         </div>
         <div class="col-md-3">
             <div class="card">
                 <div class="mx-2 card-body">
                     <h5 class="card-title my-2 ">Pro</h5>
                     <p class="text-muted">
-                        
+
                     </p>
-                    <p class="h2 fw-bold">€ 599<small class="fs-6" >/Monat </small></p>
+                    <p class="h2 fw-bold">€ 599<small class="fs-6">/Monat </small></p>
                     <h5 class="fw-bold">plus 5 % des monatlichen Budgets für Ihre Anzeigen.</h5>
                     <a href="#" class="btn btn-dark d-block mb-2 mt-3 text-capitalize">Subscribe</a>
                 </div>
@@ -389,58 +399,64 @@
                         <p class="my-3 fw-bold text-muted text-center">
                         </p>
                         <li class="mb-3">
-                            <i class="fas fa-check text-success me-3"></i><small>10 Kampagnen in Google Ads oder Meta  Ads pro Monat</small>
+                            <i class="fas fa-check text-success me-3"></i><small>10 Kampagnen in Google Ads oder Meta
+                                Ads pro Monat</small>
                         </li>
                         <li class="mb-3">
-                            <i class="fas fa-check text-success me-3"></i><small>Unlimited Strategie-Planung im Monat </small>
+                            <i class="fas fa-check text-success me-3"></i><small>Unlimited Strategie-Planung im Monat
+                            </small>
                         </li>
                         <li class="mb-3">
-                            <i class="fas fa-check text-success me-3"></i><small> Kontinuierlich Standart/Advancedoptimierung </small>
+                            <i class="fas fa-check text-success me-3"></i><small> Kontinuierlich
+                                Standart/Advancedoptimierung </small>
                         </li>
                         <li class="mb-3">
-                            <i class="fas fa-check text-success me-3"></i><small> Reporting und Analytics-Dashboard</small>
+                            <i class="fas fa-check text-success me-3"></i><small> Reporting und
+                                Analytics-Dashboard</small>
                         </li>
-                        
+
                         <li class="mb-3">
-                            <i class="fas fa-check text-success me-3"></i><small> Premium Support (Hohe Priorität)</small>
+                            <i class="fas fa-check text-success me-3"></i><small> Premium Support (Hohe
+                                Priorität)</small>
                         </li>
                     </ol>
                 </div>
-            </div>
+            </div><br><br>
         </div>
         <div class="col-md-3">
             <div class="card">
                 <div class="mx-2 card-body">
                     <h5 class="card-title my-2 ">Enterprise</h5>
                     <p class="text-muted">
-                        
+
                     </p>
-                    
+
                     <a href="#" class="btn btn-dark d-block mb-2 mt-3 text-capitalize">Contact us</a>
                 </div>
-            </div>
-            <div class="card-footer">
-                <p class="text-uppercase fw-bold" style="font-size: 12px;">Was ist inbegriffen?</p>
-                <ol class="list-unstyled mb-0 px-4">
-                    <li class="mb-3">
-                        <i class="fas fa-check text-success me-3"></i><small>Maßgeschneiderte Lösung für Ihren Geschäftsbedarf.</small>
-                    </li>
-                  
-                </ol>
-            </div>
+                <div class="card-footer">
+                    <p class="text-uppercase fw-bold" style="font-size: 12px;">Was ist inbegriffen?</p>
+                    <ol class="list-unstyled mb-0 px-4">
+                        <li class="mb-3">
+                            <i class="fas fa-check text-success me-3"></i><small>Maßgeschneiderte Lösung für Ihren
+                                Geschäftsbedarf.</small>
+                        </li>
+
+                    </ol>
+                </div>
             </div>
         </div>
     </div>
+
     <!--1 month plan end-->
     <!--3months plans start-->
-    <div id="3months" class="row" style="display:none" >
+    <div id="3months" class="row" style="display:none">
         <div class="col-md-3">
             <div class="card">
                 <div class="mx-2 card-body">
                     <h5 class="card-title my-2 ">Basic</h5>
-                      
-                      <p class="h2 fw-bold">€ 275<small class="fs-6" >/Monat </small></p>
-                      <h5 class="fw-bold">plus 5 % des monatlichen Budgets für Ihre Anzeigen.</h5>
+
+                    <p class="h2 fw-bold">€ 275<small class="fs-6">/Monat </small></p>
+                    <h5 class="fw-bold">plus 5 % des monatlichen Budgets für Ihre Anzeigen.</h5>
                     <a href="#" class="btn btn-dark d-block mb-2 mt-3 text-capitalize">Subscribe</a>
                 </div>
                 <div class="card-footer">
@@ -449,23 +465,25 @@
                         <p class="my-3 fw-bold text-muted text-center">
                         </p>
                         <li class="mb-3">
-                            <i class="fas fa-check text-success me-3"></i><small>2 Kampagnen in Google Ads oder Meta pro Mont</small>
+                            <i class="fas fa-check text-success me-3"></i><small>2 Kampagnen in Google Ads oder Meta pro
+                                Mont</small>
                         </li>
                         <li class="mb-3">
-                            <i class="fas fa-check text-success me-3"></i><small> 2 mal Standartoptimierungen pro Monat</small>
+                            <i class="fas fa-check text-success me-3"></i><small> 2 mal Standartoptimierungen pro
+                                Monat</small>
                         </li>
                     </ol>
                 </div>
-            </div>
+            </div><br><br>
         </div>
         <div class="col-md-3">
             <div class="card border border-dark">
                 <div class="mx-2 card-body">
                     <h5 class="card-title my-2 ">Premium</h5>
                     <p class="text-muted">
-                       
+
                     </p>
-                    <p class="h2 fw-bold">€ 475<small class="fs-6" >/Monat </small></p>
+                    <p class="h2 fw-bold">€ 475<small class="fs-6">/Monat </small></p>
                     <h5 class="fw-bold">plus 5 % des monatlichen Budgets für Ihre Anzeigen.</h5>
                     <a href="#" class="btn btn-dark d-block mb-2 mt-3 text-capitalize">Subscribe</a>
                 </div>
@@ -475,33 +493,37 @@
                         <p class="my-3 fw-bold text-muted text-center">
                         </p>
                         <li class="mb-3">
-                            <i class="fas fa-check text-success me-3"></i><small>6 Kampagnen in Google Ads oder Meta</small>
+                            <i class="fas fa-check text-success me-3"></i><small>6 Kampagnen in Google Ads oder
+                                Meta</small>
                         </li>
                         <li class="mb-3">
-                            <i class="fas fa-check text-success me-3"></i><small>2 mal Strategie-Planung im Monat</small>
+                            <i class="fas fa-check text-success me-3"></i><small>2 mal Strategie-Planung im
+                                Monat</small>
                         </li>
                         <li class="mb-3">
-                            <i class="fas fa-check text-success me-3"></i><small> 2 mal Standart/Advancedoptimierung pro Woche</small>
+                            <i class="fas fa-check text-success me-3"></i><small> 2 mal Standart/Advancedoptimierung pro
+                                Woche</small>
                         </li>
                         <li class="mb-3">
-                            <i class="fas fa-check text-success me-3"></i><small> Reporting und Analytics-Dashboard</small>
+                            <i class="fas fa-check text-success me-3"></i><small> Reporting und
+                                Analytics-Dashboard</small>
                         </li>
-                        
+
                         <li class="mb-3">
                             <i class="fas fa-check text-success me-3"></i><small> Premium Support</small>
                         </li>
                     </ol>
                 </div>
-            </div>
+            </div><br><br>
         </div>
         <div class="col-md-3">
             <div class="card">
                 <div class="mx-2 card-body">
                     <h5 class="card-title my-2 ">Pro</h5>
                     <p class="text-muted">
-                       
+
                     </p>
-                    <p class="h2 fw-bold">€ 575<small class="fs-6" >/Monat </small></p>
+                    <p class="h2 fw-bold">€ 575<small class="fs-6">/Monat </small></p>
                     <h5 class="fw-bold">plus 5 % des monatlichen Budgets für Ihre Anzeigen.</h5>
                     <a href="#" class="btn btn-dark d-block mb-2 mt-3 text-capitalize">Subscribe</a>
                 </div>
@@ -511,42 +533,48 @@
                         <p class="my-3 fw-bold text-muted text-center">
                         </p>
                         <li class="mb-3">
-                            <i class="fas fa-check text-success me-3"></i><small>10 Kampagnen in Google Ads oder Meta  Ads pro Monat</small>
+                            <i class="fas fa-check text-success me-3"></i><small>10 Kampagnen in Google Ads oder Meta
+                                Ads pro Monat</small>
                         </li>
                         <li class="mb-3">
-                            <i class="fas fa-check text-success me-3"></i><small>Unlimited Strategie-Planung im Monat </small>
+                            <i class="fas fa-check text-success me-3"></i><small>Unlimited Strategie-Planung im Monat
+                            </small>
                         </li>
                         <li class="mb-3">
-                            <i class="fas fa-check text-success me-3"></i><small> Kontinuierlich Standart/Advancedoptimierung </small>
+                            <i class="fas fa-check text-success me-3"></i><small> Kontinuierlich
+                                Standart/Advancedoptimierung </small>
                         </li>
                         <li class="mb-3">
-                            <i class="fas fa-check text-success me-3"></i><small> Reporting und Analytics-Dashboard</small>
+                            <i class="fas fa-check text-success me-3"></i><small> Reporting und
+                                Analytics-Dashboard</small>
                         </li>
-                       
+
                         <li class="mb-3">
-                            <i class="fas fa-check text-success me-3"></i><small> Premium Support (Hohe Priorität)</small>
+                            <i class="fas fa-check text-success me-3"></i><small> Premium Support (Hohe
+                                Priorität)</small>
                         </li>
                     </ol>
                 </div>
-            </div>
+            </div><br><br>
         </div>
         <div class="col-md-3">
             <div class="card">
                 <div class="mx-2 card-body">
                     <h5 class="card-title my-2 ">Enterprise</h5>
                     <p class="text-muted">
-                        
+
                     </p>
-                    
+
                     <a href="#" class="btn btn-dark d-block mb-2 mt-3 text-capitalize">Contact us</a>
                 </div>
                 <div class="card-footer">
                     <p class="text-uppercase fw-bold" style="font-size: 12px;">Was ist inbegriffen?</p>
                     <ol class="list-unstyled mb-0 px-4">
                         <li class="mb-3">
-                            <i class="fas fa-check text-success me-3"></i><small>Maßgeschneiderte Lösung für Ihren Geschäftsbedarf.</small>
+                            <i class="fas fa-check text-success me-3"></i><small>Maßgeschneiderte Lösung für Ihren
+                                Geschäftsbedarf.</small>
                         </li>
-                      
+
                     </ol>
                 </div>
             </div>
@@ -554,144 +582,16 @@
     </div>
     <!--3months plans end-->
 
-        <!--6months plans start-->
-        <div id="6months" class="row" style="display:none">
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="mx-2 card-body">
-                        <h5 class="card-title my-2 ">Basic</h5>
-                        <p class="text-muted mb-2">
-                            
-                        </p>
-                        <p class="h2 fw-bold">€ 231<small class="fs-6" >/Monat </small></p>
-                    <h5 class="fw-bold">plus 5 % des monatlichen Budgets für Ihre Anzeigen.</h5>
-                        <a href="#" class="btn btn-dark d-block mb-2 mt-3 text-capitalize">Subscribe</a>
-                    </div>
-                    <div class="card-footer">
-                        <p class="text-uppercase fw-bold" style="font-size: 12px;">Was ist inbegriffen?</p>
-                        <ol class="list-unstyled mb-0 px-4">
-                            <p class="my-3 fw-bold text-muted text-center">
-                            </p>
-                            <li class="mb-3">
-                                <i class="fas fa-check text-success me-3"></i><small>2 Kampagnen in Google Ads oder Meta pro Mont</small>
-                            </li>
-                            <li class="mb-3">
-                                <i class="fas fa-check text-success me-3"></i><small> 2 mal Standartoptimierungen pro Monat</small>
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card border border-dark">
-                    <div class="mx-2 card-body">
-                        <h5 class="card-title my-2 ">Premium</h5>
-                        <p class="text-muted">
-                            
-                        </p>
-                        <p class="h2 fw-bold">€ 399<small class="fs-6" >/Monat </small></p>
-                    <h5 class="fw-bold">plus 5 % des monatlichen Budgets für Ihre Anzeigen.</h5>
-                        <a href="#" class="btn btn-dark d-block mb-2 mt-3 text-capitalize">Subscribe</a>
-                    </div>
-                    <div class="card-footer">
-                        <p class="text-uppercase fw-bold" style="font-size: 12px;">Was ist inbegriffen?</p>
-                        <ol class="list-unstyled mb-0 px-4">
-                            <p class="my-3 fw-bold text-muted text-center">
-                            </p>
-                            <li class="mb-3">
-                                <i class="fas fa-check text-success me-3"></i><small>6 Kampagnen in Google Ads oder Meta</small>
-                            </li>
-                            <li class="mb-3">
-                                <i class="fas fa-check text-success me-3"></i><small>2 mal Strategie-Planung im Monat</small>
-                            </li>
-                            <li class="mb-3">
-                                <i class="fas fa-check text-success me-3"></i><small> 2 mal Standart/Advancedoptimierung pro Woche</small>
-                            </li>
-                            <li class="mb-3">
-                                <i class="fas fa-check text-success me-3"></i><small> Reporting und Analytics-Dashboard</small>
-                            </li>
-                            <li class="mb-3">
-                                <i class="fas fa-check text-success me-3"></i><small> Kein Ergebnis in diesem Monat. In diesem Monat wird keine Zahlung eingezogen.</small>
-                            </li>
-                            <li class="mb-3">
-                                <i class="fas fa-check text-success me-3"></i><small> Premium Support</small>
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="mx-2 card-body">
-                        <h5 class="card-title my-2 ">Pro</h5>
-                        <p class="text-muted">
-                            
-                        </p>
-                        <p class="h2 fw-bold">€ 483<small class="fs-6" >/Monat </small></p>
-                    <h5 class="fw-bold">plus 5 % des monatlichen Budgets für Ihre Anzeigen.</h5>
-                        <a href="#" class="btn btn-dark d-block mb-2 mt-3 text-capitalize">Subscribe</a>
-                    </div>
-                    <div class="card-footer">
-                        <p class="text-uppercase fw-bold" style="font-size: 12px;">Was ist inbegriffen?</p>
-                        <ol class="list-unstyled mb-0 px-4">
-                            <p class="my-3 fw-bold text-muted text-center">
-                            </p>
-                            <li class="mb-3">
-                                <i class="fas fa-check text-success me-3"></i><small>10 Kampagnen in Google Ads oder Meta  Ads pro Monat</small>
-                            </li>
-                            <li class="mb-3">
-                                <i class="fas fa-check text-success me-3"></i><small>Unlimited Strategie-Planung im Monat </small>
-                            </li>
-                            <li class="mb-3">
-                                <i class="fas fa-check text-success me-3"></i><small> Kontinuierlich Standart/Advancedoptimierung </small>
-                            </li>
-                            <li class="mb-3">
-                                <i class="fas fa-check text-success me-3"></i><small> Reporting und Analytics-Dashboard</small>
-                            </li>
-                            <li class="mb-3">
-                                <i class="fas fa-check text-success me-3"></i><small> Kein Ergebnis in diesem Monat. In diesem Monat wird keine Zahlung eingezogen.</small>
-                            </li>
-                            <li class="mb-3">
-                                <i class="fas fa-check text-success me-3"></i><small> Premium Support (Hohe Priorität)</small>
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="mx-2 card-body">
-                        <h5 class="card-title my-2 ">Enterprise</h5>
-                        <p class="text-muted">
-                            
-                        </p>
-                        
-                        <a href="#" class="btn btn-dark d-block mb-2 mt-3 text-capitalize">Contact us</a>
-                    </div>
-                </div>
-                <div class="card-footer">
-                    <p class="text-uppercase fw-bold" style="font-size: 12px;">Was ist inbegriffen?</p>
-                    <ol class="list-unstyled mb-0 px-4">
-                        <li class="mb-3">
-                            <i class="fas fa-check text-success me-3"></i><small>Maßgeschneiderte Lösung für Ihren Geschäftsbedarf.</small>
-                        </li>
-                      
-                    </ol>
-                </div>
-                </div>
-            </div>
-        </div>
-        <!--6months plans end-->
-        <!--1year plans start-->
-    <div id="1year" class="row" style="display:none">
+    <!--6months plans start-->
+    <div id="6months" class="row" style="display:none">
         <div class="col-md-3">
             <div class="card">
                 <div class="mx-2 card-body">
                     <h5 class="card-title my-2 ">Basic</h5>
                     <p class="text-muted mb-2">
-                       
+
                     </p>
-                    <p class="h2 fw-bold">€ 209<small class="fs-6" >/Monat </small></p>
+                    <p class="h2 fw-bold">€ 231<small class="fs-6">/Monat </small></p>
                     <h5 class="fw-bold">plus 5 % des monatlichen Budgets für Ihre Anzeigen.</h5>
                     <a href="#" class="btn btn-dark d-block mb-2 mt-3 text-capitalize">Subscribe</a>
                 </div>
@@ -701,23 +601,25 @@
                         <p class="my-3 fw-bold text-muted text-center">
                         </p>
                         <li class="mb-3">
-                            <i class="fas fa-check text-success me-3"></i><small>2 Kampagnen in Google Ads oder Meta pro Mont</small>
+                            <i class="fas fa-check text-success me-3"></i><small>2 Kampagnen in Google Ads oder Meta pro
+                                Mont</small>
                         </li>
                         <li class="mb-3">
-                            <i class="fas fa-check text-success me-3"></i><small> 2 mal Standartoptimierungen pro Monat</small>
+                            <i class="fas fa-check text-success me-3"></i><small> 2 mal Standartoptimierungen pro
+                                Monat</small>
                         </li>
                     </ol>
                 </div>
-            </div>
+            </div><br><br>
         </div>
         <div class="col-md-3">
             <div class="card border border-dark">
                 <div class="mx-2 card-body">
                     <h5 class="card-title my-2 ">Premium</h5>
                     <p class="text-muted">
-                        
+
                     </p>
-                    <p class="h2 fw-bold">€ 361<small class="fs-6" >/Monat </small></p>
+                    <p class="h2 fw-bold">€ 399<small class="fs-6">/Monat </small></p>
                     <h5 class="fw-bold">plus 5 % des monatlichen Budgets für Ihre Anzeigen.</h5>
                     <a href="#" class="btn btn-dark d-block mb-2 mt-3 text-capitalize">Subscribe</a>
                 </div>
@@ -727,35 +629,40 @@
                         <p class="my-3 fw-bold text-muted text-center">
                         </p>
                         <li class="mb-3">
-                            <i class="fas fa-check text-success me-3"></i><small>6 Kampagnen in Google Ads oder Meta</small>
+                            <i class="fas fa-check text-success me-3"></i><small>6 Kampagnen in Google Ads oder
+                                Meta</small>
                         </li>
                         <li class="mb-3">
-                            <i class="fas fa-check text-success me-3"></i><small>2 mal Strategie-Planung im Monat</small>
+                            <i class="fas fa-check text-success me-3"></i><small>2 mal Strategie-Planung im
+                                Monat</small>
                         </li>
                         <li class="mb-3">
-                            <i class="fas fa-check text-success me-3"></i><small> 2 mal Standart/Advancedoptimierung pro Woche</small>
+                            <i class="fas fa-check text-success me-3"></i><small> 2 mal Standart/Advancedoptimierung pro
+                                Woche</small>
                         </li>
                         <li class="mb-3">
-                            <i class="fas fa-check text-success me-3"></i><small> Reporting und Analytics-Dashboard</small>
+                            <i class="fas fa-check text-success me-3"></i><small> Reporting und
+                                Analytics-Dashboard</small>
                         </li>
                         <li class="mb-3">
-                            <i class="fas fa-check text-success me-3"></i><small> Kein Ergebnis in diesem Monat. In diesem Monat wird keine Zahlung eingezogen.</small>
+                            <i class="fas fa-check text-success me-3"></i><small> Kein Ergebnis in diesem Monat. In
+                                diesem Monat wird keine Zahlung eingezogen.</small>
                         </li>
                         <li class="mb-3">
                             <i class="fas fa-check text-success me-3"></i><small> Premium Support</small>
                         </li>
                     </ol>
                 </div>
-            </div>
+            </div><br><br>
         </div>
         <div class="col-md-3">
             <div class="card">
                 <div class="mx-2 card-body">
                     <h5 class="card-title my-2 ">Pro</h5>
                     <p class="text-muted">
-                        
+
                     </p>
-                    <p class="h2 fw-bold">€ 437<small class="fs-6" >/Monat </small></p>
+                    <p class="h2 fw-bold">€ 483<small class="fs-6">/Monat </small></p>
                     <h5 class="fw-bold">plus 5 % des monatlichen Budgets für Ihre Anzeigen.</h5>
                     <a href="#" class="btn btn-dark d-block mb-2 mt-3 text-capitalize">Subscribe</a>
                 </div>
@@ -765,26 +672,32 @@
                         <p class="my-3 fw-bold text-muted text-center">
                         </p>
                         <li class="mb-3">
-                            <i class="fas fa-check text-success me-3"></i><small>10 Kampagnen in Google Ads oder Meta  Ads pro Monat</small>
+                            <i class="fas fa-check text-success me-3"></i><small>10 Kampagnen in Google Ads oder Meta
+                                Ads pro Monat</small>
                         </li>
                         <li class="mb-3">
-                            <i class="fas fa-check text-success me-3"></i><small>Unlimited Strategie-Planung im Monat </small>
+                            <i class="fas fa-check text-success me-3"></i><small>Unlimited Strategie-Planung im Monat
+                            </small>
                         </li>
                         <li class="mb-3">
-                            <i class="fas fa-check text-success me-3"></i><small> Kontinuierlich Standart/Advancedoptimierung </small>
+                            <i class="fas fa-check text-success me-3"></i><small> Kontinuierlich
+                                Standart/Advancedoptimierung </small>
                         </li>
                         <li class="mb-3">
-                            <i class="fas fa-check text-success me-3"></i><small> Reporting und Analytics-Dashboard</small>
+                            <i class="fas fa-check text-success me-3"></i><small> Reporting und
+                                Analytics-Dashboard</small>
                         </li>
                         <li class="mb-3">
-                            <i class="fas fa-check text-success me-3"></i><small> Kein Ergebnis in diesem Monat. In diesem Monat wird keine Zahlung eingezogen.</small>
+                            <i class="fas fa-check text-success me-3"></i><small> Kein Ergebnis in diesem Monat. In
+                                diesem Monat wird keine Zahlung eingezogen.</small>
                         </li>
                         <li class="mb-3">
-                            <i class="fas fa-check text-success me-3"></i><small> Premium Support (Hohe Priorität)</small>
+                            <i class="fas fa-check text-success me-3"></i><small> Premium Support (Hohe
+                                Priorität)</small>
                         </li>
                     </ol>
                 </div>
-            </div>
+            </div><br><br>
         </div>
         <div class="col-md-3">
             <div class="card">
@@ -796,20 +709,160 @@
                     
                     <a href="#" class="btn btn-dark d-block mb-2 mt-3 text-capitalize">Contact us</a>
                 </div>
-            </div>
-            <div class="card-footer">
-                <p class="text-uppercase fw-bold" style="font-size: 12px;">Was ist inbegriffen?</p>
-                <ol class="list-unstyled mb-0 px-4">
-                    <li class="mb-3">
-                        <i class="fas fa-check text-success me-3"></i><small>Maßgeschneiderte Lösung für Ihren Geschäftsbedarf.</small>
-                    </li>
-                  
-                </ol>
-            </div>
+                <div class="card-footer">
+                    <p class="text-uppercase fw-bold" style="font-size: 12px;">Was ist inbegriffen?</p>
+                    <ol class="list-unstyled mb-0 px-4">
+                        <li class="mb-3">
+                            <i class="fas fa-check text-success me-3"></i><small>Maßgeschneiderte Lösung für Ihren Geschäftsbedarf.</small>
+                        </li>
+                      
+                    </ol>
+                </div>
             </div>
         </div>
-    </div><br>
+    </div>
+    <!--6months plans end-->
+    <!--1year plans start-->
+    <div id="1year" class="row" style="display:none">
+        <div class="col-md-3">
+            <div class="card">
+                <div class="mx-2 card-body">
+                    <h5 class="card-title my-2 ">Basic</h5>
+                    <p class="text-muted mb-2">
+
+                    </p>
+                    <p class="h2 fw-bold">€ 209<small class="fs-6">/Monat </small></p>
+                    <h5 class="fw-bold">plus 5 % des monatlichen Budgets für Ihre Anzeigen.</h5>
+                    <a href="#" class="btn btn-dark d-block mb-2 mt-3 text-capitalize">Subscribe</a>
+                </div>
+                <div class="card-footer">
+                    <p class="text-uppercase fw-bold" style="font-size: 12px;">Was ist inbegriffen?</p>
+                    <ol class="list-unstyled mb-0 px-4">
+                        <p class="my-3 fw-bold text-muted text-center">
+                        </p>
+                        <li class="mb-3">
+                            <i class="fas fa-check text-success me-3"></i><small>2 Kampagnen in Google Ads oder Meta pro
+                                Mont</small>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-check text-success me-3"></i><small> 2 mal Standartoptimierungen pro
+                                Monat</small>
+                        </li>
+                    </ol>
+                </div>
+            </div><br><br>
+        </div>
+        <div class="col-md-3">
+            <div class="card border border-dark">
+                <div class="mx-2 card-body">
+                    <h5 class="card-title my-2 ">Premium</h5>
+                    <p class="text-muted">
+
+                    </p>
+                    <p class="h2 fw-bold">€ 361<small class="fs-6">/Monat </small></p>
+                    <h5 class="fw-bold">plus 5 % des monatlichen Budgets für Ihre Anzeigen.</h5>
+                    <a href="#" class="btn btn-dark d-block mb-2 mt-3 text-capitalize">Subscribe</a>
+                </div>
+                <div class="card-footer">
+                    <p class="text-uppercase fw-bold" style="font-size: 12px;">Was ist inbegriffen?</p>
+                    <ol class="list-unstyled mb-0 px-4">
+                        <p class="my-3 fw-bold text-muted text-center">
+                        </p>
+                        <li class="mb-3">
+                            <i class="fas fa-check text-success me-3"></i><small>6 Kampagnen in Google Ads oder
+                                Meta</small>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-check text-success me-3"></i><small>2 mal Strategie-Planung im
+                                Monat</small>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-check text-success me-3"></i><small> 2 mal Standart/Advancedoptimierung pro
+                                Woche</small>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-check text-success me-3"></i><small> Reporting und
+                                Analytics-Dashboard</small>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-check text-success me-3"></i><small> Kein Ergebnis in diesem Monat. In
+                                diesem Monat wird keine Zahlung eingezogen.</small>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-check text-success me-3"></i><small> Premium Support</small>
+                        </li>
+                    </ol>
+                </div>
+            </div><br><br>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="mx-2 card-body">
+                    <h5 class="card-title my-2 ">Pro</h5>
+                    <p class="text-muted">
+
+                    </p>
+                    <p class="h2 fw-bold">€ 437<small class="fs-6">/Monat </small></p>
+                    <h5 class="fw-bold">plus 5 % des monatlichen Budgets für Ihre Anzeigen.</h5>
+                    <a href="#" class="btn btn-dark d-block mb-2 mt-3 text-capitalize">Subscribe</a>
+                </div>
+                <div class="card-footer">
+                    <p class="text-uppercase fw-bold" style="font-size: 12px;">Was ist inbegriffen?</p>
+                    <ol class="list-unstyled mb-0 px-4">
+                        <p class="my-3 fw-bold text-muted text-center">
+                        </p>
+                        <li class="mb-3">
+                            <i class="fas fa-check text-success me-3"></i><small>10 Kampagnen in Google Ads oder Meta
+                                Ads pro Monat</small>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-check text-success me-3"></i><small>Unlimited Strategie-Planung im Monat
+                            </small>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-check text-success me-3"></i><small> Kontinuierlich
+                                Standart/Advancedoptimierung </small>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-check text-success me-3"></i><small> Reporting und
+                                Analytics-Dashboard</small>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-check text-success me-3"></i><small> Kein Ergebnis in diesem Monat. In
+                                diesem Monat wird keine Zahlung eingezogen.</small>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-check text-success me-3"></i><small> Premium Support (Hohe
+                                Priorität)</small>
+                        </li>
+                    </ol>
+                </div>
+            </div><br><br>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="mx-2 card-body">
+                    <h5 class="card-title my-2 ">Enterprise</h5>
+                    <p class="text-muted">
+                        
+                    </p>
+                    
+                    <a href="#" class="btn btn-dark d-block mb-2 mt-3 text-capitalize">Contact us</a>
+                </div>
+                <div class="card-footer">
+                    <p class="text-uppercase fw-bold" style="font-size: 12px;">Was ist inbegriffen?</p>
+                    <ol class="list-unstyled mb-0 px-4">
+                        <li class="mb-3">
+                            <i class="fas fa-check text-success me-3"></i><small>Maßgeschneiderte Lösung für Ihren Geschäftsbedarf.</small>
+                        </li>
+                      
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
     <p class="fs-5" style="text-align: center;"><sup>*</sup>Alles Preise sind ohne MwSt. aufgeführt.</p>
-   
+
 
 </body>
